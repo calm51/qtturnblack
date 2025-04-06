@@ -26,7 +26,7 @@ qtb get(const Color &color) {
 
     QString root_path(":/qtturnblack/resource");
 
-    if (color == Color::White) {
+    if (color == Color::Light) {
     } else if (color == Color::Dark) {
     } else if (color == Color::Gray) {
         result.palette.setColor(QPalette::Base, QColor(53, 53, 53));

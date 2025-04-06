@@ -11,7 +11,7 @@
 namespace Qtturnblack {
 
 enum class Color {
-    White = 0,   // 纯白背景
+    Light = 0,   // 纯白背景
     Dark = 1,    // 夜间模式
     Gray = 2,    // Fusion灰
     Default = 3, // 算是重置
