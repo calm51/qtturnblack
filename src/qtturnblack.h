@@ -14,7 +14,7 @@ enum class Color {
     Light = 0,   // 纯白背景
     Dark = 1,    // 夜间模式
     Gray = 2,    // Fusion灰
-    Default = 3, // 算是重置
+    Default = 3 // 算是重置
 };
 
 struct QTTURNBLACK_EXPORT qtb {
