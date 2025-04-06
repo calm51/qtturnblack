@@ -1,0 +1,113 @@
+QMenu {
+    color: rgb(230, 230, 230);
+    menu-scrollable: 1;
+    background-color: rgb(64, 64, 64);
+    border: 1px solid rgb(37, 37, 37);
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+QMenu::item {
+    padding: 3 30 3 24;
+    margin: 0 0 0 0;
+}
+
+QMenu::icon {
+    padding-left: 4;
+}
+
+
+QLabel > QMenu::item, QLineEdit > QMenu::item, QTextEdit > QMenu::item, QPlainTextEdit > * > QMenu::item, QTextEdit > * > QMenu::item {
+    padding: 3 30 3 ARG_MenuItemLeftSpan;
+    margin: 0 0 0 0;
+}
+
+QLabel > QMenu::item > QMenu::item, QLineEdit > QMenu::item > QMenu::item, QTextEdit > QMenu::item > QMenu::item, QPlainTextEdit > * > QMenu::item > QMenu::item, QTextEdit > * > QMenu::item > QMenu::item {
+    padding: 3 30 3 24;
+    margin: 0 0 0 0;
+}
+
+QMenu::indicator {
+    width: 16px;
+    height: 16px;
+    padding: 0 -19 0 4;
+    margin: 0 0 0 0;
+}
+
+QMenu::indicator::checked {
+    image: url(ARG_ImagePath/checkbox_checked.png);
+}
+
+QMenu::indicator:unchecked {
+    image: url(ARG_ImagePath/checkbox_unchecked.png);
+}
+
+QMenu::right-arrow {
+    image: url(ARG_ImagePath/right.png);
+    width: 10px;
+    height: 10px;
+    padding: 0 3 0 0;
+}
+
+QMenu::indicator::checked:disabled {
+    image: url(ARG_ImagePath/checkbox_checked_disabled.png);
+}
+
+QMenu::indicator:unchecked:disabled {
+    image: url(ARG_ImagePath/checkbox_unchecked_disabled.png);
+}
+
+QMenu::right-arrow:disabled {
+    image: url(ARG_ImagePath/right_disabled.png);
+    width: 10px;
+    height: 10px;
+    padding: 0 3 0 0;
+}
+
+QMenu::item:selected {
+    color: rgb(230, 230, 230);
+    background: rgb(91, 91, 91);
+}
+
+QMenu::item:disabled {
+    color: rgb(148, 148, 148);
+    background-color: rgb(32, 32, 32);
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgb(93, 93, 93);
+    padding: 0 0 0 0;
+    margin: 0 3 0 24;
+}
+
+QMenu::item#nocheckbox {
+    padding: 3 30 3 8;
+    margin: 0 0 0 0;
+}
+
+QMenu::icon#nocheckbox {
+    padding-left: 12;
+}
+
+QMenu:disabled {
+    color: rgb(154, 155, 154);
+}
+
+QMenu::item:default {
+    background-color: rgb(26, 26, 167);
+}
+
+QMenu::item:selected:default {
+    color: rgb(249, 246, 250);
+    background: rgb(66, 66, 79);
+}
+
+QMenu::indicator::checked#PartiallyChecked {
+    image: url(ARG_ImagePath/checkbox_parcial.png);
+}
+
+QMenu::indicator::checked:disabled#PartiallyChecked {
+    image: url(./data/style/qss3/checkbox_parcial_disable.png);
+}
+

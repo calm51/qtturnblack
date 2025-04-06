@@ -1,0 +1,39 @@
+QSlider::groove:horizontal {
+    background: transparent;
+    height: 10px;
+}
+
+QSlider::sub-page:horizontal {
+    background: rgb(0, 98, 128);
+    border: 1px solid rgb(128, 128, 128);
+    height: 10px;
+    border-radius: 0px;
+}
+
+QSlider::add-page:horizontal {
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(128, 128, 128);
+    height: 10px;
+    border-radius: 0px;
+}
+
+QSlider::handle:horizontal {
+    background: rgb(20, 20, 20);
+    border: 1px solid rgb(128, 128, 128);
+    width: 13px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    border-radius: 0px;
+}
+
+QSlider::handle:horizontal:hover {
+    background: rgb(62, 62, 62);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 0px;
+}
+
+QSlider::handle:horizontal:pressed {
+    background: rgb(0, 98, 128);
+    border: 1px solid rgb(128, 128, 128);
+    border-radius: 0px;
+}

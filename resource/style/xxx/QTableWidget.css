@@ -1,0 +1,60 @@
+
+
+QHeaderView::section {
+    background-color: rgb(30, 30, 30);
+    color: rgb(245, 245, 245);
+    border: solid;
+    border-right-width: 1px;
+    border-right-color: rgb(128, 128, 128);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(128, 128, 128);
+    padding: -1px 0px -1px 0px;
+}
+
+QVerticalView::section {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid rgb(128, 128, 128);
+    color: rgb(245, 245, 245);
+    border: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(128, 128, 128);
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(128, 128, 128);
+}
+
+
+
+
+QTableWidget {
+    color: rgb(233, 233, 233);
+    background-color: rgb(20, 20, 20);
+}
+
+QTableView::indicator {
+    padding: 0px 0px 0px 0px;
+}
+
+QTableView::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QTableView {
+    border: 1px solid rgb(128, 128, 128);
+    selection-color: rgb(249, 246, 250);
+    selection-background-color: rgb(66, 66, 79);
+    gridline-color: rgb(128, 128, 128);
+    background-color: rgb(20, 20, 20);
+    alternate-background-color: #00FF00;
+}
+
+QTableCornerButton {
+    color: rgb(0, 255, 0);
+    border: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(128, 128, 128);
+    border-right-width: 1px;
+    border-right-color: rgb(128, 128, 128);
+    background: qlineargradient(spread:pad, x1: 0,  y1: 0,  x2: 0, y2: 1, stop: 0 rgb(30, 30, 30), stop: 1 rgb(30, 30, 30));
+}
+

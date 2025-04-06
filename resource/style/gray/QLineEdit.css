@@ -1,0 +1,10 @@
+QLineEdit, QLineEdit:enabled {
+    color: rgba(207, 207, 207, 255);
+    background-color: rgb(52, 52, 52);
+/*    placeholder-text-color: rgb(255, 0, 0);*/ /*qt6.5+*/
+}
+
+QLineEdit:disabled {
+    background-color: rgb(58, 58, 58);
+}
+

@@ -1,0 +1,96 @@
+QMainWindow,QDialog{background:rgb(62,62,62);}
+QScrollArea,QScrollArea >*> .QWidget,
+#scrollAreaWidgetContents{
+    background:rgb(62,62,62);
+}
+*{color:rgb(240,240,240);}
+*:disabled{color:rgb(164,164,164);}
+QFrame#line{
+    background-color:rgba(124,124,124,160);
+    border:1px solid;
+    border-top-color:rgba(37,37,37,240);
+    border-bottom-color:rgba(0,0,0,0);
+    border-left-color:transparent;
+    border-right-color:transparent;
+}
+QProgressBar{
+  background-color: rgb(72,72,72);
+}
+
+QSpinBox,QDoubleSpinBox,QPushButton,QToolButton,QComboBox {
+    background-color: rgb(52,52,52);
+    selection-background-color:rgb(0,120,215);
+}
+QListView,QListWidget,
+QTreeView,QTreeWidget,
+QTextBrowser,QTextEdit{
+    selection-background-color:rgb(0,120,215);
+    background-color: rgb(72,72,72);
+}
+QListView:disabled,QListWidget:disabled,
+QTextBrowser:disabled,QTextEdit:disabled{
+    selection-background-color:rgb(0,120,215);
+    background-color: rgb(65,65,65);
+}
+QPlainTextEdit{
+    selection-background-color:rgb(0,120,215);
+    background-color: rgb(65,65,65);
+}
+QPlainTextEdit:disabled{
+    selection-background-color:rgb(0,120,215);
+    background-color: rgb(59,59,59);
+}
+QTreeView::item:selected,QTreeWidget::item:selected{
+    background-color:rgb(0,120,215);
+    color:rgb(255,255,255);
+}
+QListView::item:selected,QListWidget::item:selected{
+    background-color:rgb(0,120,215);
+}
+QLineEdit{
+    color:rgba(207,207,207,255);
+    background-color: rgb(52,52,52);
+}
+QLineEdit:disabled{
+    background-color: rgb(58,58,58);
+}
+
+QCheckBox{spacing: 2px;}
+QCheckBox::indicator{width:15px;height:15px;}
+QCheckBox::indicator:unchecked{image:url(:/qtturnblack/resource/qss/checkbox_unchecked.png);}
+QCheckBox::indicator:checked{image:url(:/qtturnblack/resource/qss/checkbox_checked.png);}
+QCheckBox::indicator:indeterminate{image:url(:/qtturnblack/resource/qss/checkbox_checked.png);}
+QToolTip{background-color:rgb(44,44,44);color:rgb(207,207,207);border:1px solid rgb(60,60,60);padding: 0 0 0 0;margin:0 0 0 0;}
+
+QRadioButton::indicator{width:13px;height:13px;}
+QRadioButton::indicator::unchecked{image:url(:/qtturnblack/resource/qss/radiobutton_unchecked.png);}
+QRadioButton::indicator::unchecked:disabled{image:url(:/qtturnblack/resource/qss/radiobutton_unchecked_disable.png);}
+QRadioButton::indicator::checked{image:url(:/qtturnblack/resource/qss/radiobutton_checked.png);}
+QRadioButton::indicator::checked:disabled{image:url(:/qtturnblack/resource/qss/radiobutton_checked_disable.png);}
+
+QMenu{color:rgb(230,230,230);menu-scrollable: 1;
+background-color:rgb(64,64,64);
+border:1px solid rgb(37,37,37);padding: 0 0 0 0;margin:0 0 0 0;}
+
+QMenu::item{padding: 3 30 3 24;margin:0 0 0 0;}
+QMenu::icon{padding-left:4;}
+
+QLabel > QMenu::item, QLineEdit > QMenu::item, QTextEdit > QMenu::item, QPlainTextEdit > * > QMenu::item, QTextEdit > * > QMenu::item
+{padding: 3 30 3 SELF_MenuItemLeftSpan; margin:0 0 0 0;}
+QLabel > QMenu::item > QMenu::item, QLineEdit > QMenu::item > QMenu::item, QTextEdit > QMenu::item > QMenu::item, QPlainTextEdit > * > QMenu::item > QMenu::item, QTextEdit > * > QMenu::item > QMenu::item
+{padding: 3 30 3 24;margin:0 0 0 0;}
+
+QMenu::indicator{width:16px;height:16px;padding: 0 -19 0 4;margin:0 0 0 0;}
+QMenu::indicator::checked{image:url(:/qtturnblack/resource/qss/checkbox_checked.png);}
+QMenu::indicator:unchecked{image:url(:/qtturnblack/resource/qss/checkbox_unchecked.png);}
+QMenu::right-arrow{image:url(:/qtturnblack/resource/qss/right.png);width:10px;height:10px;padding: 0 3 0 0;}
+QMenu::item:selected{color:rgb(230,230,230);background: rgb(91,91,91);}
+QMenu::separator{height:1px;background:rgb(93,93,93);padding: 0 0 0 0;margin:0 3 0 24;}
+QMenu::item#nocheckbox{padding: 3 30 3 8;margin:0 0 0 0;}
+QMenu::icon#nocheckbox{padding-left:12;}
+QMenu:disabled{color:rgb(154,155,154);}
+
+QGroupBox::indicator::checked{image:url(:/qtturnblack/resource/qss/checkbox_checked.png);}
+QGroupBox::indicator:unchecked{image:url(:/qtturnblack/resource/qss/checkbox_unchecked.png);}
+QGroupBox{border:1px solid rgb(37,37,37);margin-top:SELF_GroupTitleUpto;}
+

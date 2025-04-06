@@ -1,0 +1,21 @@
+
+QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(ARG_ImagePath/radiobutton_unchecked.png);
+}
+
+QRadioButton::indicator::unchecked:disabled {
+    image: url(ARG_ImagePath/radiobutton_unchecked_disabled.png);
+}
+
+QRadioButton::indicator::checked {
+    image: url(ARG_ImagePath/radiobutton_checked.png);
+}
+
+QRadioButton::indicator::checked:disabled {
+    image: url(ARG_ImagePath/radiobutton_checked_disabled.png);
+}

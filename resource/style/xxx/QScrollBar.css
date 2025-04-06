@@ -1,0 +1,88 @@
+QScrollBar::handle:vertical:disabled, QScrollBar::handle:horizontal:disabled {
+    background-color: rgba(155, 155, 155, 100);
+    border-radius: 0px;
+}
+
+
+
+QScrollBar:vertical {
+    width: 10px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: transparent;
+}
+
+QScrollBar:horizontal {
+    height: 6px;
+    margin: 0px 0px 0px 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background: transparent;
+}
+
+/*空闲*/
+QScrollBar::handle:horizontal, QScrollBar::handle:vertical {
+    background: rgba(155, 155, 155, 200);
+    min-height: 20px;
+    min-width: 20px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px;
+    border: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::add-page:horizontal, QScrollBar::sub-page:vertical, QScrollBar::sub-page:horizontal {
+    background: transparent;
+}
+
+/*鼠标移上去时*/
+QScrollBar:vertical:hover, QScrollBar:horizontal:hover {
+    background-color: rgba(56, 56, 56, 164);
+}
+
+QScrollBar::handle:vertical:hover, QScrollBar::handle:horizontal:hover {
+    background: rgba(165, 165, 165, 200);
+    border-radius: 0px;
+}
+
+/*纵向滚动条下面三角形部分*//*横向滚动条右边的三角形部分*//*纵向滚动条顶部三角形位置*//*横向滚动条左侧三角形位置*/
+QScrollBar::add-line:vertical {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:horizontal {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+    subcontrol-position: top;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::handle:vertical:pressed, QScrollBar::handle:horizontal:pressed {
+    background-color: rgba(210, 210, 210, 200);
+    border-radius: 0px;
+}
+
+QScrollBar:vertical:pressed, QScrollBar:horizontal:pressed {
+    background-color: rgba(56, 56, 56, 164);
+}

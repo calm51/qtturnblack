@@ -1,0 +1,286 @@
+
+QMainWindow, QDialog {
+    background: rgb(62, 62, 62);
+}
+
+QScrollArea, QScrollArea > * > .QWidget, #scrollAreaWidgetContents {
+    background: rgb(62, 62, 62);
+}
+
+* {
+    color: rgb(240, 240, 240);
+    selection-color: rgb(255, 255, 255);
+    selection-background-color: rgb(0, 120, 215);
+}
+
+*:disabled {
+    color: rgb(164, 164, 164);
+}
+
+QFrame#line {
+    background-color: rgba(124, 124, 124, 160);
+    border: 1px solid;
+    border-top-color: rgba(37, 37, 37, 240);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+QProgressBar {
+    background-color: rgb(72, 72, 72);
+}
+
+QSpinBox, QDoubleSpinBox, QPushButton, QToolButton {
+    background-color: rgb(52, 52, 52);
+}
+
+QListView, QListWidget,
+QTreeView, QTreeWidget,
+QTextBrowser, QTextEdit {
+    background-color: rgb(72, 72, 72);
+}
+
+QListView:disabled, QListWidget:disabled,
+QTextBrowser:disabled, QTextEdit:disabled {
+    background-color: rgb(65, 65, 65);
+}
+
+QPlainTextEdit {
+    background-color: rgb(65, 65, 65);
+}
+
+QPlainTextEdit:disabled {
+    background-color: rgb(59, 59, 59);
+}
+
+
+QSpinBox::up-button, QDoubleSpinBox::up-button, QDateTimeEdit::up-button {
+    image: url(:/qtturnblack/resource/image/gray/top.png);
+    width: 10px;
+    height: 10px;
+    padding: 2px 3px 0px 0px;
+}
+
+QSpinBox::down-button, QDoubleSpinBox::down-button, QDateTimeEdit::down-button {
+    image: url(:/qtturnblack/resource/image/gray/bottom.png);
+    width: 10px;
+    height: 10px;
+    padding: 0px 3px 2px 0px;
+}
+
+QSpinBox::up-button:disabled, QDoubleSpinBox::up-button:disabled, QDateTimeEdit::up-button:disabled {
+    image: url(:/qtturnblack/resource/image/gray/top_disabled.png);
+    width: 10px;
+    height: 10px;
+    padding: 2px 3px 0px 0px;
+}
+
+QSpinBox::down-button:disabled, QDoubleSpinBox::down-button:disabled, QDateTimeEdit::down-button:disabled {
+    image: url(:/qtturnblack/resource/image/gray/bottom_disabled.png);
+    width: 10px;
+    height: 10px;
+    padding: 0px 3px 2px 0px;
+}
+
+QSpinBox::up-button:pressed, QDoubleSpinBox::up-button:pressed, QDateTimeEdit::up-button:pressed {
+    top: -2px;
+}
+
+QSpinBox::down-button:pressed, QDoubleSpinBox::down-button:pressed, QDateTimeEdit::down-button:pressed {
+    bottom: -2px;
+}
+
+QSpinBox::up-button:off, QDoubleSpinBox::up-button:off, QDateTimeEdit::up-button:off {
+    image: url(:/qtturnblack/resource/image/gray/top_disabled.png);
+    width: 10px;
+    height: 10px;
+    padding: 2px 3px 0px 0px;
+}
+
+QSpinBox::down-button:off, QDoubleSpinBox::down-button:off, QDateTimeEdit::down-button:off {
+    image: url(:/qtturnblack/resource/image/gray/bottom_disabled.png);
+    width: 10px;
+    height: 10px;
+    padding: 0px 3px 2px 0px;
+}
+
+
+QAbstractItemView {
+    color: rgb(233, 233, 233);
+    background: rgb(32, 32, 32);
+}
+
+
+QTreeView::item:selected, QTreeWidget::item:selected {
+    background-color: rgb(0, 120, 215);
+    color: rgb(255, 255, 255);
+}
+
+QListView::item:selected, QListWidget::item:selected {
+    background-color: rgb(0, 120, 215);
+}
+
+QLineEdit, QLineEdit:enabled, QDateEdit, QTimeEdit, QDateTimeEdit, QKeySequenceEdit {
+    color: rgba(207, 207, 207, 255);
+    background-color: rgb(52, 52, 52);
+}
+
+QLineEdit:disabled, QDateEdit:disabled, QTimeEdit:disabled, QDateTimeEdit:disabled, QKeySequenceEdit:disabled {
+    background-color: rgb(58, 58, 58);
+}
+
+QLineEdit::placeholder, QKeySequenceEdit::placeholder {
+    color: rgb(240, 0, 240);
+    background-color: rgb(58, 58, 58);
+}
+
+QCheckBox {
+    spacing: 2px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_checked.png);
+}
+
+QCheckBox::indicator:indeterminate {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_parcial.png);
+}
+
+QCheckBox::indicator:unchecked:disabled {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_unchecked_disabled.png);
+}
+
+QCheckBox::indicator:checked:disabled {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_checked_disabled.png);
+}
+
+QCheckBox::indicator:indeterminate:disabled {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_parcial_disabled.png);
+}
+
+
+QToolTip {
+    background-color: rgb(44, 44, 44);
+    color: rgb(207, 207, 207);
+    border: 1px solid rgb(60, 60, 60);
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(:/qtturnblack/resource/image/gray/radiobutton_unchecked.png);
+}
+
+QRadioButton::indicator::unchecked:disabled {
+    image: url(:/qtturnblack/resource/image/gray/radiobutton_unchecked_disabled.png);
+}
+
+QRadioButton::indicator::checked {
+    image: url(:/qtturnblack/resource/image/gray/radiobutton_checked.png);
+}
+
+QRadioButton::indicator::checked:disabled {
+    image: url(:/qtturnblack/resource/image/gray/radiobutton_checked_disabled.png);
+}
+
+QMenu {
+    color: rgb(230, 230, 230);
+    menu-scrollable: 1;
+    background-color: rgb(64, 64, 64);
+    border: 1px solid rgb(37, 37, 37);
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+QMenu::item {
+    padding: 3 30 3 24;
+    margin: 0 0 0 0;
+}
+
+QMenu::icon {
+    padding-left: 4;
+}
+
+QLabel > QMenu::item, QLineEdit > QMenu::item, QTextEdit > QMenu::item, QPlainTextEdit > * > QMenu::item, QTextEdit > * > QMenu::item {
+    padding: 3 30 3 SELF_MenuItemLeftSpan;
+    margin: 0 0 0 0;
+}
+
+QLabel > QMenu::item > QMenu::item, QLineEdit > QMenu::item > QMenu::item, QTextEdit > QMenu::item > QMenu::item, QPlainTextEdit > * > QMenu::item > QMenu::item, QTextEdit > * > QMenu::item > QMenu::item {
+    padding: 3 30 3 24;
+    margin: 0 0 0 0;
+}
+
+QMenu::indicator {
+    width: 16px;
+    height: 16px;
+    padding: 0 -19 0 4;
+    margin: 0 0 0 0;
+}
+
+QMenu::indicator::checked {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_checked.png);
+}
+
+QMenu::indicator:unchecked {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_unchecked.png);
+}
+
+QMenu::right-arrow {
+    image: url(:/qtturnblack/resource/image/gray/right.png);
+    width: 10px;
+    height: 10px;
+    padding: 0 3 0 0;
+}
+
+QMenu::item:selected {
+    color: rgb(230, 230, 230);
+    background: rgb(91, 91, 91);
+}
+
+QMenu::separator {
+    height: 1px;
+    background: rgb(93, 93, 93);
+    padding: 0 0 0 0;
+    margin: 0 3 0 24;
+}
+
+QMenu::item#nocheckbox {
+    padding: 3 30 3 8;
+    margin: 0 0 0 0;
+}
+
+QMenu::icon#nocheckbox {
+    padding-left: 12;
+}
+
+QMenu:disabled {
+    color: rgb(154, 155, 154);
+}
+
+QGroupBox::indicator::checked {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_checked.png);
+}
+
+QGroupBox::indicator:unchecked {
+    image: url(:/qtturnblack/resource/image/gray/checkbox_unchecked.png);
+}
+
+QGroupBox {
+    border: 1px solid rgb(37, 37, 37);
+    margin-top: SELF_GroupTitleUpto;
+}

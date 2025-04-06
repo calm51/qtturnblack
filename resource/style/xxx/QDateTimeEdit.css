@@ -1,0 +1,63 @@
+QDateEdit, QTimeEdit, QDateTimeEdit {
+    color: rgba(207, 207, 207, 255);
+    background-color: rgb(52, 52, 52);
+}
+
+QDateEdit:disabled, QTimeEdit:disabled, QDateTimeEdit:disabled {
+    background-color: rgb(58, 58, 58);
+}
+
+
+QDateTimeEdit::up-button {
+    subcontrol-origin: padding;
+    subcontrol-position: right top;
+    image: url(ARG_ImagePath/normal/arrow-up-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: -2 -2 -4 -2;
+    margin: 0;
+}
+
+QDateTimeEdit::down-button {
+    subcontrol-origin: padding;
+    subcontrol-position: right bottom;
+    image: url(ARG_ImagePath/normal/arrow-down-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: -4 -2 -2 -2;
+    margin: 0;
+}
+
+QDateTimeEdit::up-button:disabled {
+    image: url(ARG_ImagePath/disabled/arrow-up-s-fill.svg);
+}
+
+QDateTimeEdit::down-button:disabled {
+    image: url(ARG_ImagePath/disabled/arrow-down-s-fill.svg);
+}
+
+QDateTimeEdit::up-button:hover {
+    background-color: rgb(62, 62, 62);
+}
+
+QDateTimeEdit::down-button:hover {
+    background-color: rgb(62, 62, 62);
+}
+
+QDateTimeEdit::up-button:pressed {
+/*    top: -2px;*/
+    background-color: rgb(42, 42, 42);
+}
+
+QDateTimeEdit::down-button:pressed {
+/*    bottom: -2px;*/
+    background-color: rgb(42, 42, 42);
+}
+
+QDateTimeEdit::up-button:off {
+    image: url(ARG_ImagePath/disabled/arrow-up-s-fill.svg);
+}
+
+QDateTimeEdit::down-button:off {
+    image: url(ARG_ImagePath/disabled/arrow-down-s-fill.svg);
+}

@@ -1,0 +1,36 @@
+
+QGroupBox::indicator::checked {
+    image: url(ARG_ImagePath/checkbox_checked.png);
+}
+
+QGroupBox::indicator:unchecked {
+    image: url(ARG_ImagePath/checkbox_unchecked.png);
+}
+
+QGroupBox::indicator:checked:disabled {
+    image: url(ARG_ImagePath/checkbox_checked_disabled.png);
+}
+
+QGroupBox::indicator:unchecked:disabled {
+    image: url(ARG_ImagePath/checkbox_unchecked_disabled.png);
+}
+
+QGroupBox::indicator:indeterminate {
+    image: url(ARG_ImagePath/checkbox_parcial.png);
+}
+
+QGroupBox::indicator:indeterminate:disabled {
+    image: url(ARG_ImagePath/checkbox_parcial_disabled.png);
+}
+
+QGroupBox {
+    border: 1px solid rgb(37, 37, 37);
+    margin-top: ARG_GroupTitleUpto;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    position: relative;
+    left: 10px;
+    color: rgb(233, 233, 233)
+}

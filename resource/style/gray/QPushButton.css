@@ -1,0 +1,10 @@
+QPushButton {
+    background-color: rgb(52, 52, 52);
+}
+
+QPushButton#evilButton::menu-indicator {
+    image: url(myindicator.png);
+    subcontrol-position: right center;
+    subcontrol-origin: padding;
+    left: -2px
+}

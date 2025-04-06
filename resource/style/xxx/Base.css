@@ -1,0 +1,24 @@
+
+* {
+/*    font: 9pt "微软雅黑";*/
+/*    outline: 0px;*/
+    color: rgb(255, 255, 255);
+    selection-color: rgb(255, 255, 255);
+    selection-background-color: rgb(0, 120, 215);
+}
+
+*:disabled, *::title:disabled, *::section:disabled {
+    color: rgb(164, 164, 164);
+}
+
+
+QPalette {
+    background: #FF0000;
+}
+
+
+QComboBox:hover, QSpinBox:hover, QDoubleSpinBox:hover, QDateEdit:hover, QTimeEdit:hover, QDateTimeEdit:hover, QFontComboBox:hover,
+QLineEdit:hover,
+QPushButton:hover, QToolButton:hover {
+    border-color: rgba(0, 120, 215, 200);
+}

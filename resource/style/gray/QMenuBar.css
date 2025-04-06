@@ -1,0 +1,36 @@
+
+QMenuBar::item {
+    color: rgb(245, 245, 245);
+    background-color: rgb(26, 26, 26);
+    padding: 1 7 1 7;
+    margin: 0 0 0 0;
+}
+
+QMenuBar, QMenuBar:disabled {
+    color: rgb(245, 245, 245);
+    background-color: rgb(26, 26, 26);
+    border: 0px solid rgb(128, 128, 128);
+    margin: 0px;
+    border: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(102, 102, 102);
+    border-top-width: 1px;
+    border-top-color: rgb(128, 128, 128);
+    border-right-width: 1px;
+    border-right-color: rgb(128, 128, 128);
+    border-left-width: 1px;
+    border-left-color: rgb(128, 128, 128);
+}
+
+QMenuBar::item:selected {
+    color: rgb(249, 246, 250);
+    background: rgb(62, 62, 62);
+    border: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(0, 0, 102);
+}
+
+QMenuBar::item:disabled {
+    color: rgb(148, 148, 148);
+    background-color: rgb(26, 26, 26);
+}

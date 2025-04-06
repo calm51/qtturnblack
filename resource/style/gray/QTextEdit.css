@@ -1,0 +1,8 @@
+
+ QTextEdit {
+    background-color: rgb(72, 72, 72);
+}
+
+ QTextEdit:disabled {
+    background-color: rgb(65, 65, 65);
+}

@@ -1,0 +1,8 @@
+
+QTextBrowser {
+    background-color: rgb(72, 72, 72);
+}
+
+QTextBrowser:disabled {
+    background-color: rgb(65, 65, 65);
+}

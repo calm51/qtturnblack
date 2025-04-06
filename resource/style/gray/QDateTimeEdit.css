@@ -1,0 +1,8 @@
+QDateEdit, QTimeEdit, QDateTimeEdit {
+    color: rgba(207, 207, 207, 255);
+    background-color: rgb(52, 52, 52);
+}
+
+QDateEdit:disabled, QTimeEdit:disabled, QDateTimeEdit:disabled {
+    background-color: rgb(58, 58, 58);
+}

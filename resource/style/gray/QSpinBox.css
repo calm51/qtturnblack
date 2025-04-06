@@ -1,0 +1,57 @@
+
+QSpinBox, QDoubleSpinBox {
+    background-color: rgb(52, 52, 52);
+}
+
+
+QSpinBox::up-button, QDoubleSpinBox::up-button {
+    subcontrol-origin: padding;
+    subcontrol-position: right top;
+    image: url(ARG_ImagePath/normal/arrow-up-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: 2px 3px 0px 0px;
+}
+
+QSpinBox::down-button, QDoubleSpinBox::down-button {
+    image: url(ARG_ImagePath/normal/arrow-down-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: 0px 3px 2px 0px;
+}
+
+QSpinBox::up-button:disabled, QDoubleSpinBox::up-button:disabled {
+    image: url(ARG_ImagePath/disabled/arrow-up-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: 2px 3px 0px 0px;
+}
+
+QSpinBox::down-button:disabled, QDoubleSpinBox::down-button:disabled {
+    image: url(ARG_ImagePath/disabled/arrow-down-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: 0px 3px 2px 0px;
+}
+
+QSpinBox::up-button:pressed, QDoubleSpinBox::up-button:pressed {
+    top: -2px;
+}
+
+QSpinBox::down-button:pressed, QDoubleSpinBox::down-button:pressed{
+    bottom: -2px;
+}
+
+QSpinBox::up-button:off, QDoubleSpinBox::up-button:off {
+    image: url(ARG_ImagePath/disabled/arrow-up-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: 2px 3px 0px 0px;
+}
+
+QSpinBox::down-button:off, QDoubleSpinBox::down-button:off {
+    image: url(ARG_ImagePath/disabled/arrow-down-s-fill.svg);
+    width: 16px;
+    height: 16px;
+    padding: 0px 3px 2px 0px;
+}

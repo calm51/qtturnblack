@@ -1,0 +1,15 @@
+
+QMenu::item:disabled {
+    color: rgb(155, 155, 155);
+    background-color: rgb(52, 52, 52);
+}
+
+/*QMenu::item {
+    padding: 3 30 3 24;
+    margin: 0 0 0 0;
+}
+
+QLabel > QMenu::item, QLineEdit > QMenu::item, QTextEdit > QMenu::item, QPlainTextEdit > * > QMenu::item, QTextEdit > * > QMenu::item {
+    padding: 3 30 3 ARG_MenuItemLeftSpan;
+    margin: 0 0 0 0;
+}*/

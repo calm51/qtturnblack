@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/qtturnblack">
+        <file>resource/style/gray/Base.css</file>
+        <file>resource/style/gray/QMenu.css</file>
+    </qresource>
+</RCC>

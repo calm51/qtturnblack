@@ -1,0 +1,8 @@
+QFrame#line {
+    background-color: rgba(124, 124, 124, 160);
+    border: 1px solid;
+    border-top-color: rgba(37, 37, 37, 240);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    border-left-color: transparent;
+    border-right-color: transparent;
+}

@@ -1,0 +1,11 @@
+QKeySequenceEdit {
+    color: rgba(207, 207, 207, 255);
+    background-color: rgb(52, 52, 52);
+}
+
+QKeySequenceEdit:disabled {
+    background-color: rgb(58, 58, 58);
+}
+
+
+

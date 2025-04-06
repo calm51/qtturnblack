@@ -1,0 +1,102 @@
+
+QTreeView, QTreeWidget{
+    background-color: rgb(72, 72, 72);
+}
+
+
+QAbstractItemView {
+    color: rgb(233, 233, 233);
+    background: rgb(32, 32, 32);
+}
+
+
+QTreeView::item:selected, QTreeWidget::item:selected {
+    background-color: rgb(0, 120, 215);
+    color: rgb(255, 255, 255);
+}
+
+
+QTreeWidget::item:has-children {
+    border-right-width: 0px;
+}
+
+QTreeWidget::item, QTreeView::item {
+    border: solid;
+    padding: -1px 0px -1px 0px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(128, 128, 128);
+    border-right-width: 1px;
+    border-right-color: rgb(128, 128, 128);
+}
+
+QTreeWidget::item:selected, QTreeView::item:selected {
+    background-color: rgb(66, 66, 79);
+}
+
+QTreeWidget::indicator, QTreeView::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QTreeWidget, QTreeView {
+    color: rgb(233, 233, 233);
+    background-color: rgb(20, 20, 20);
+    border: 1px solid rgb(128, 128, 128);
+    margin: 0px;
+    padding: 1px;
+    border-radius: 0px;
+    selection-color: rgb(249, 246, 250);
+    selection-background-color: rgb(66, 66, 79);
+    gridline-color: rgb(128, 128, 128);
+    alternate-background-color: #00FF00
+}
+
+QTreeWidget::indicator, QTreeView::indicator {
+    width: 15px;
+    height: 15px;
+}
+
+QTreeWidget::indicator:unchecked, QTreeView::indicator:unchecked {
+    image: url(ARG_ImagePath/checkbox_unchecked.png);
+}
+
+QTreeWidget::indicator:unchecked:disabled, QTreeView::indicator:unchecked:disabled {
+    image: url(ARG_ImagePath/checkbox_unchecked_disabled.png);
+}
+
+QTreeWidget::indicator:checked, QTreeView::indicator:checked {
+    image: url(ARG_ImagePath/checkbox_checked.png);
+}
+
+QTreeWidget::indicator:checked:disabled, QTreeView::indicator:checked:disabled {
+    image: url(ARG_ImagePath/checkbox_checked_disabled.png);
+}
+
+QTreeWidget::indicator:indeterminate, QTreeView::indicator:indeterminate {
+    image: url(ARG_ImagePath/checkbox_parcial.png);
+}
+
+QTreeWidget::indicator:indeterminate:disabled, QTreeView::indicator:indeterminate:disabled {
+    image: url(ARG_ImagePath/checkbox_parcial_disabled.png);
+}
+
+QTreeWidget::indicator:checked#PartiallyChecked, QTreeView::indicator:checked {
+    image: url(ARG_ImagePath/checkbox_parcial.png);
+}
+
+QTreeWidget::indicator:checked:disabled#PartiallyChecked, QTreeView::indicator:checked:disabled {
+    image: url(ARG_ImagePath/checkbox_parcial_disabled.png);
+}
+
+
+QTreeView::branch:has-siblings:!adjoins-item {
+    border-image: url(ARG_ImagePath/tree_vline.png) 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item:!has-children {
+    border-image: url(ARG_ImagePath/tree_branch_more.png) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+    border-image: url(ARG_ImagePath/tree_branch_end.png) 0;
+}

@@ -1,0 +1,7 @@
+QTabWidget::pane {
+    border: 1px solid rgb(128, 128, 128);
+}
+
+QTabWidget::tab-bar {
+    left: 2px;
+}

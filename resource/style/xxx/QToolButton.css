@@ -1,0 +1,28 @@
+QToolButton {
+   background-color: rgb(52, 52, 52);
+}
+
+QToolButton::hover {
+
+}
+
+QToolButton:pressed {
+
+}
+
+QToolButton::menu-button {
+    background-color: transparent;
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    border-left-width: 0px;
+    border-left-style: solid;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+    border-left-color: #00FF00;
+}
+
+QToolButton::menu-indicator {
+    image: none;
+}

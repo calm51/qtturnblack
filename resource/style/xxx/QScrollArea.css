@@ -1,0 +1,9 @@
+QScrollArea, QScrollArea > * > .QWidget, #scrollAreaWidgetContents {
+    background: rgb(62, 62, 62);
+}
+
+QAbstractScrollArea::corner {
+    height: 0px;
+    width: 0px;
+    background: transparent;
+}
