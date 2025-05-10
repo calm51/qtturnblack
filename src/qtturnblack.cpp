@@ -27,6 +27,7 @@ qtb get(const Color &color) {
     QString root_path(":/qtturnblack/resource");
 
     if (color == Color::Light) {
+        result.palette.setColor(QPalette::Button, QColor(239, 239, 239));
     } else if (color == Color::Dark) {
     } else if (color == Color::Gray) {
         result.palette.setColor(QPalette::Base, QColor(53, 53, 53));
@@ -34,7 +35,7 @@ qtb get(const Color &color) {
         result.palette.setColor(QPalette::Button, QColor(53, 53, 53));
 
         result.palette.setColor(QPalette::Light, QColor(95, 95, 95));
-        result.palette.setColor(QPalette::Midlight, QColor(255, 255, 53));
+        result.palette.setColor(QPalette::Midlight, QColor(83, 83, 83)); // 255,255,53
         result.palette.setColor(QPalette::Dark, QColor(172, 172, 172));
         result.palette.setColor(QPalette::Mid, QColor(222, 222, 222));
         result.palette.setColor(QPalette::Shadow, QColor(53, 255, 255));
@@ -70,7 +71,7 @@ qtb get(const Color &color) {
 
     } else if (color == Color::Default) {
         // result.palette.setColor(QPalette::Window, QColor(240, 240, 240));
-        // result.palette.setColor(QPalette::Button, QColor(240, 240, 240));
+        result.palette.setColor(QPalette::Button, QColor(250, 250, 250));
     }
 
     if (color == Color::Gray) {
