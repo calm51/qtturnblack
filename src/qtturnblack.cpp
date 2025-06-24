@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+﻿#pragma execution_character_set("utf-8")
 
 #include "qtturnblack.h"
 
@@ -6,7 +6,7 @@
 #include <QDir>
 #include <QFile>
 #include <QGuiApplication>
-
+#include <QColor>
 
 namespace Qtturnblack {
 
@@ -27,18 +27,20 @@ qtb get(const Color &color) {
     QString root_path(":/qtturnblack/resource");
 
     if (color == Color::Light) {
+        result.palette.setColor(QPalette::Base, QColor(255, 255, 255));
+        result.palette.setColor(QPalette::Window, QColor(255, 255, 255));
         result.palette.setColor(QPalette::Button, QColor(239, 239, 239));
     } else if (color == Color::Dark) {
     } else if (color == Color::Gray) {
-        result.palette.setColor(QPalette::Base, QColor(53, 53, 53));
-        result.palette.setColor(QPalette::Window, QColor(53, 53, 53));
+        result.palette.setColor(QPalette::Base, QColor(63, 63, 63));
+        result.palette.setColor(QPalette::Window, QColor(63, 63, 63));
         result.palette.setColor(QPalette::Button, QColor(53, 53, 53));
 
         result.palette.setColor(QPalette::Light, QColor(95, 95, 95));
         result.palette.setColor(QPalette::Midlight, QColor(83, 83, 83)); // 255,255,53
-        result.palette.setColor(QPalette::Dark, QColor(172, 172, 172));
-        result.palette.setColor(QPalette::Mid, QColor(222, 222, 222));
-        result.palette.setColor(QPalette::Shadow, QColor(53, 255, 255));
+        result.palette.setColor(QPalette::Mid, QColor(150, 150, 150));   // 172
+        result.palette.setColor(QPalette::Dark, QColor(222, 222, 222));
+        result.palette.setColor(QPalette::Shadow, QColor(32, 32, 32));
 
         result.palette.setColor(QPalette::PlaceholderText, QColor(163, 163, 163));
 
@@ -55,7 +57,7 @@ qtb get(const Color &color) {
 
         result.palette.setColor(QPalette::ColorGroup::Inactive, QPalette::Button, QColor(53, 53, 53));
 
-        result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::Base, QColor(44, 44, 44));
+        result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::Base, QColor(59, 59, 59, 255)); // 73, 73, 73, 128
         result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::Window, QColor(44, 44, 44));
         result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::Button, QColor(44, 44, 44));
 
@@ -65,6 +67,7 @@ qtb get(const Color &color) {
         result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::WindowText, QColor(155, 155, 155));
         result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::ButtonText, QColor(155, 155, 155));
 
+        // result.palette.setColor(QPalette::ColorGroup::Disabled, QPalette::Shadow, QColor(32, 32, 32, 128));
 
         result.palette.setColor(QPalette::BrightText, QColor(255, 255, 0));
 
